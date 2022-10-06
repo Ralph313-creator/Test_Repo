@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h1>ABC Company IT Service Request</h1>
+
+    <form action="success.html">
+<!-- first last Name & email user input -->
+        <p>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+        </p>
+
+        <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+        </p>
+
+        <p>
+            <label for="emailAdd">Email Address:</label>
+            <input type="email" name="emailAdd" id="emailAdd">
+        </p>
+
+        <p>
+            <label for="contactNum">Contact No.:</label>
+            <input type="text" name="contactNum" id="contactNum" placeholder="phone or mobile number.">
+        </p>
+<!-- radio button -->
+        <p>
+            <label for="workArea" style="font-weight:bolder;">Location:</label><br />
+            <input type="radio" name="workType" id="onsite" onclick="funcCheck(this.value)" value="Please state your Workstation No., Department, Floor and Building">
+            <label for="onsite">Onsite</label>
+
+            <input type="radio" name="workType" id="online" onclick="funcCheck(this.value)"  value="Please complete your address and include a landmark nearest to your location.">
+            <label for="online">Work From Home</label>  
+        </p>
+
+        <p>
+            <textarea name="workArea" id="workArea" cols="30" rows="10" placeholder="Please choose location first"></textarea>
+        </p>
+
+        <P>
+            <label for="requestType">Service Request Type:</label>
+            <select name="requesstType" id="requestType" >
+                <option value="undecide">Select Service Type</option>
+                <option value="Comp-Setup">Desktop/Laptop Setup</option>
+                <option value="Comp-Support">Desktop/Laptop Support</option>
+                <option value="Comp-Maintenance">Desktop/Laptop Maintenance</option>
+                <option value="Soft-Setup">Software Installation</option>
+                <option value="Soft-Support">Software Support</option>
+                <option value="Comp-sub-Setup">Computer Peripheral Setup</option>
+                <option value="Comp-sub-TS">Peripheral Troubleshooting</option>
+            </select>
+        </P>
+        <p>
+            <label for="requestDes">Request Description:</label><br />
+            <textarea name="requestDes" id="" cols="30" rows="10" placeholder="Explain service requested as detailed as possible"></textarea>
+        </p>
+            
+        <p>
+            <label for="clientPics">Select files:</label>
+            <input type="file" id="clientPics" name="clientPics" multiple><br><br>
+        </p>
+        <button type="submit" onclick="funcSubmit()">Submit</button>
+        <button type="reset">Clear</button>
+        
+    </form>
+
+
+
+<!-- javascript -->
+    <script>
+ function funcCheck(workType) {
+    document.getElementById("workArea").placeholder=workType; 
+    // return the value variable  workType
+  }
+
+  function funcSubmit() {
+  alert("Thanks for submitting your request\n\n\n\n Your Request is being Process.....");
+}
+  </script>
+</body>
+</html>

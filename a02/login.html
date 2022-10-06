@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC login</title>
+</head>
+<body>
+    <form action="Forms.html">
+        
+            <p>
+                <label for="pass">Username:</label>
+                <input type="text" name="fname" id="fname">
+            </p>
+    
+            <p>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+            </p>
+            <p>
+                <button type="submit" onclick="funcSubmit()">Submit</button>
+                <button type="reset">Clear</button>
+            </p>
+    </form>
+<script>
+function funcSubmit() {
+        alert("Thank you for logging in");
+    }
+</script>
+</body>
+</html>
