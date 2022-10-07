@@ -1,0 +1,38 @@
+h1 {
+    color: brown;
+}
+
+/* ID Selector */
+#title-1 {
+    color: #0AB6AF;
+}
+/* Class Selector */
+.title-2 {
+    color: violet;
+    text-align: center;
+}
+
+/* Attribute Selector */
+
+[type="text"] {
+    background-color: aquamarine;
+}
+
+/* Universal Selector */
+
+* {
+    font-family: 'lobster';
+}
+
+#my_dog img{
+    width: 10%;
+    height: 10%;
+    border-radius: 4px;
+}
+
+li {
+    list-style-type: none ;
+}
+ul > li {
+    letter-spacing: 4px;
+}

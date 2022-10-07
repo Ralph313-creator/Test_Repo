@@ -1,0 +1,35 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+h1{
+    font-size: 30px;
+}
+
+#cap {
+    text-transform: uppercase;
+}
+
+.list {
+    background-color: rgb(86, 179, 86);
+}
+
+div img {
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+
+
+div~p {
+    text-align: center;
+}
+
+div+ul{
+    list-style-type: none ;
+}
+ul>li {
+    letter-spacing: 10px;
+}
