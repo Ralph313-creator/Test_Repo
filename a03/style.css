@@ -15,6 +15,10 @@ h1{
     background-color: rgb(86, 179, 86);
 }
 
+ol[class]{
+    border: 10in;
+}
+
 div img {
     width: 100px;
     height: 80px;
@@ -22,10 +26,11 @@ div img {
 }
 
 
-
 div~p {
     text-align: center;
 }
+
+
 
 div+ul{
     list-style-type: none ;
