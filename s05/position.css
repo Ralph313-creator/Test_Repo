@@ -1,0 +1,22 @@
+.staticPosition {
+    border: 2px solid red;
+    /* top: 10px; */
+}
+
+.relativePosition{
+    position: relative;
+    border: 2px solid blue;
+    left: 150px;
+
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+
+img.staticPosition {
+    position: static;
+
+}
