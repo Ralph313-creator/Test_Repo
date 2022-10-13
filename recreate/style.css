@@ -1,0 +1,17 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+#h2 {
+    text-transform: uppercase;
+}
+
+.list {
+    background-color: rgb(55, 209, 63);
+}
+

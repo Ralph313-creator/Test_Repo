@@ -1,0 +1,17 @@
+/* Flex Container */
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px; /*div column height depends to container height and conatiner height depends on container content when its row  so i apply fix height on container to stretch the container then div column will follow cause align-items default stretch*/
+    
+}
+
+/* direct Child selector will apply to div but not on div children opposite descendant selector */
+/* or you can just use type selector like div{} but i prefer this to avoid any conflict to other div element if any*/
+.flex-container>div {
+    /* column properties apply here */
+    border: solid 1px; /* color default black*/
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}

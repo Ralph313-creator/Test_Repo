@@ -1,25 +1,75 @@
-.flexbox-container {
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.9rem;
+}
+
+.container {
+    padding: 20px;
     display: flex;
-    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
     align-items: baseline;
+}
+/* container class select direct child div */
+.container>div {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.main-content {
+    flex: 1;
+    order: 2; 
+}
+
+.left-sidebar {
+    flex: 1;
+    order: 1;
+    align-self:stretch;
     
 }
 
-.flexbox-item {
-    width: 200px;
-    margin: 10px;
-    border: 3px solid #333;
-    background-color: #dfdfdf;
+.right-sidebar {
+    flex: 1;
+    order: 3;
+    align-self:start;
+}
+/* just select div with class gallery-container */
+div.gallery-container {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    align-content:flex-start;
+
+}
+/* div with class of gallery-container select direct child all element */
+div.gallery-container > *{
+    background: wheat;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
+/* Pseudo class position  select each second element */
+div.gallery-container p:first-of-type {
+    color:red
+
 }
 
-.flexbox-item-1 {
-    min-height: 100px;
+.par-6 {
+    text-overflow:ellipsis;
+    overflow: hidden;
+    flex: 1;
+    
+    /* flex-grow: 3; */
 }
 
-.flexbox-item-2 {
-    min-width: 200px;
-}
-
-.flexbox-item-3 {
-    min-height: 300px;
-}
+ 
